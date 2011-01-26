@@ -1,0 +1,24 @@
+-classpath
+'/Users/cwilper/work/cwilper/ttff/target/classes'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/Users/cwilper/work/cwilper/ttff/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2011 <a href="http://duraspace.org/">DuraSpace</a>. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/cwilper/work/cwilper/ttff/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'The Tiny Filtering Framework 1.0.0 API'
+-link
+'http://java.sun.com/javase/6/docs/api'
+-use
+-version
+-windowtitle
+'The Tiny Filtering Framework 1.0.0 API'
