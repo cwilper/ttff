@@ -4,8 +4,8 @@
 
 About ${artifactId}
 
-  This library provides useful abstractions for working with filterable object
-  sequences in Java.
+  This library provides useful abstractions for working with object sequences in
+  Java.
 
   For more information, see {{{./usage.html}Usage}} and
 {{{./apidocs/index.html}Javadocs}}

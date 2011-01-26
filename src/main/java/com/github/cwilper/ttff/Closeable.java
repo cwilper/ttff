@@ -1,5 +1,8 @@
 package com.github.cwilper.ttff;
 
+/**
+ * An object that must be closed when no longer in use.
+ */
 public interface Closeable {
 
     /**
@@ -7,9 +10,9 @@ public interface Closeable {
      * <p>
      * This method can be called multiple times without negative effects.
      * <p>
-     * A call to this method generally signals the end of the useful life
-     * of the object, after which subsequent calls to other methods of the
-     * object may fail or behave unpredictably.
+     * A call to this method signals the end of the useful life of the object,
+     * after which subsequent calls to other methods of the object may fail
+     * or behave unpredictably.
      * <p>
      * Implementations that need to free resources <strong>MUST</strong> be
      * annotated with <code>@PreDestroy</code> so that the container can

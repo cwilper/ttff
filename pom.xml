@@ -13,7 +13,7 @@
   <packaging>jar</packaging>
   <name>The Tiny Filtering Framework</name>
   <description>
-    Useful abstractions for working with object sequences in Java.
+    Useful abstractions for working with object sequences.
   </description>
   <url>http://cwilper.github.com/ttff/</url>
 

@@ -1,4 +1,4 @@
 /**
- * Useful abstractions for working with filterable object sequences in Java.
+ * Useful abstractions for working with object sequences.
  */
 package com.github.cwilper.ttff;

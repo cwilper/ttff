@@ -208,6 +208,26 @@ public class SourcesTest {
         Assert.assertEquals("c", list.get(2));
     }
 
+    @Test
+    public void filter() throws IOException {
+        String[] values = new String[] { "a", "b", "c" };
+
+        Source oSource;
+        Source fSource;
+
+        oSource = Sources.from(values);
+        fSource = Sources.filter(oSource, Filters.bool(true));
+        Assert.assertEquals(3, Sources.drain(fSource));
+
+        oSource = Sources.from(values);
+        fSource = Sources.filter(oSource, Filters.bool(false));
+        Assert.assertEquals(0, Sources.drain(fSource));
+
+        oSource = Sources.from(values);
+        fSource = Sources.filter(oSource, Filters.gt("b"));
+        Assert.assertEquals(1, Sources.drain(fSource));
+    }
+
     private static int drain(Iterator<?> iterator) {
         int count = 0;
         while (iterator.hasNext()) {

@@ -1,0 +1,14 @@
+The Tiny Filtering Framework - Source Code
+==========================================
+
+Website
+-------
+
+    http://cwilper.github.com/ttff/
+
+Build Instructions
+------------------
+
+To build all project artifacts and install them in your local Maven repository:
+
+    mvn clean install

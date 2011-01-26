@@ -30,6 +30,7 @@ public class FiltersTest {
         Filter<String> filter = Filters.from(sink);
         Assert.assertEquals("a", filter.accept("a"));
         Assert.assertEquals("a", sb.toString());
+        filter.close();
     }
 
     @Test
