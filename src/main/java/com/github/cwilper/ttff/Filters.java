@@ -228,9 +228,9 @@ public final class Filters {
             @Override
             public T accept(T item) throws IOException {
                 for (Filter<T> filter: filters) {
-                    item = filter.accept(item);
-                    if (item != null) {
-                        return item;
+                    T result = filter.accept(item);
+                    if (result != null) {
+                        return result;
                     }
                 }
                 return null;
